@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="customSelect.css">
+    <title>Custom select</title>
+</head>
+<body>
+    <div>Последний результат: <span id="result">...</span></div>
+
+    <div id="animal-select" class="customselect">
+        <button class="title">Выберите</button>
+        <ul>
+            <!-- значение хранится в свойстве data-value -->
+            <li data-value="bird">Птицы</li>
+            <li data-value="fish">Рыбы</li>
+            <li data-value="animal">Звери</li>
+            <li data-value="dino">Динозавры</li>
+            <li data-value="simplest">Одноклеточные</li>
+        </ul>
+    </div>
+
+    <script src="customSelect.js"></script>
+    <script>
+        var animalSelect = new CustomSelect({
+        elem: document.getElementById('animal-select')
+        });
+
+        document.addEventListener('select', function(event) {
+            document.getElementById('result').innerHTML = event.detail.value;
+        });
+    </script>
+</body>
+</html>
