@@ -27,7 +27,6 @@
         var animalSelect = new CustomSelect({
         elem: document.getElementById('animal-select')
         });
-
         document.addEventListener('select', function(event) {
             document.getElementById('result').innerHTML = event.detail.value;
         });
