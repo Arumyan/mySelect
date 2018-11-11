@@ -5,31 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="customSelect.css">
-    <title>Custom select</title>
+    <title>customSelect</title>
 </head>
 <body>
-    <div>Последний результат: <span id="result">...</span></div>
-
-    <div id="animal-select" class="customselect">
-        <button class="title">Выберите</button>
+     <div id="customSelect" class="customselect">
+        <div class="selectedField">Выберите</div>
         <ul>
             <!-- значение хранится в свойстве data-value -->
-            <li data-value="bird">Птицы</li>
-            <li data-value="fish">Рыбы</li>
-            <li data-value="animal">Звери</li>
-            <li data-value="dino">Динозавры</li>
-            <li data-value="simplest">Одноклеточные</li>
+            <li data-value="value1">Пункт 1</li>
+            <li data-value="value2">Пункт 2</li>
+            <li data-value="value3">Пункт 3</li>
+            <li data-value="value4">Пункт 4</li>
+            <li data-value="value5">Пункт 5</li>
         </ul>
     </div>
 
     <script src="customSelect.js"></script>
     <script>
-        var mySelect = document.querySelector('#animal-select');
-        var animalSelect = new CustomSelect(mySelect);
-
-        /* document.addEventListener('select', function(event) {
-            document.getElementById('result').innerHTML = event.detail.value;
-        }); */
+        new CustomSelect('#customSelect', '.selectedField');
     </script>
 </body>
 </html>
