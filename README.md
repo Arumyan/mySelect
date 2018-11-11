@@ -3,7 +3,7 @@
 *my version element select*
 
 
-## HTML markup
+### HTML markup
 
 ```
 <div id="customSelect" class="customselect">
@@ -18,4 +18,14 @@
   </ul>
 </div>
 
+```
+
+### Initialize
+```
+<script src="customSelect.js"></script>
+<script>
+
+  new CustomSelect('#customSelect', '.selectedField');
+
+</script>
 ```
