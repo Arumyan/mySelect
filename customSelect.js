@@ -5,8 +5,9 @@ function CustomSelect(elem) {
     var myselect = this;
 
     this.toggle = function() {
-      if (this.isOpen) myselect.close()
-        else myselect.open();
+      if (this.isOpen)
+        myselect.close()
+      else myselect.open();
     };
 
     this.open = function() {
@@ -23,7 +24,8 @@ function CustomSelect(elem) {
 
     // закрыть селект, если клик вне его
     this.onDocumentClick = function(event) {
-      if (!myselect.elem.contains(event.target)) myselect.close();
+      if (!myselect.elem.contains(event.target))
+        myselect.close();
     }
 
 
@@ -38,27 +40,6 @@ function CustomSelect(elem) {
 
     this.setValue = function(title, value) {
       this.elem.querySelector('.title').innerHTML = title;
+      this.elem.querySelector('.title').setAttribute('data-val', value);
     }
   }
-
-    // закрыть селект, если клик вне его
-    /* function onDocumentClick(event) {
-      if (!this.elem.contains(event.target)) myselect.close();
-    } */
-
-    // ------------------------
-
-    /* function setValue(title, value) {
-      this.elem.querySelector('.title').innerHTML = title;
-
-      var widgetEvent = new CustomEvent('select', {
-        bubbles: true,
-        detail: {
-          title: title,
-          value: value
-        }
-      });
-
-      myselect.elem.dispatchEvent(widgetEvent);
-
-    } */
