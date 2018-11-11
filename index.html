@@ -24,13 +24,12 @@
 
     <script src="customSelect.js"></script>
     <script>
-        var animalSelect = new CustomSelect({
-        elem: document.getElementById('animal-select')
-        });
-        
-        document.addEventListener('select', function(event) {
+        var mySelect = document.querySelector('#animal-select');
+        var animalSelect = new CustomSelect(mySelect);
+
+        /* document.addEventListener('select', function(event) {
             document.getElementById('result').innerHTML = event.detail.value;
-        });
+        }); */
     </script>
 </body>
 </html>
