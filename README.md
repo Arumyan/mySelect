@@ -2,9 +2,7 @@
 
 *my version element select*
 
-
 ### HTML markup
-
 ```
 <div id="customSelect" class="customselect">
   <div class="selectedField">Выберите</div>
@@ -19,7 +17,6 @@
 </div>
 
 ```
-
 ### Initialize
 ```
 <script src="customSelect.js"></script>
@@ -29,3 +26,5 @@
 
 </script>
 ```
+### Demo
+https://arumyan.github.io/mySelect/
