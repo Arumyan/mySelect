@@ -1,5 +1,4 @@
 # mySelect
-
 *my version element select*
 
 ### HTML markup
