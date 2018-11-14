@@ -1,6 +1,7 @@
 # mySelect
 *my version element select*
 
+
 ### HTML markup
 ```
 <div id="customSelect" class="customselect">
