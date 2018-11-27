@@ -24,7 +24,6 @@
   new CustomSelect('#customSelect', '.selectedField');
 
 </script>
-
 ```
 ### Demo
 https://arumyan.github.io/mySelect/
