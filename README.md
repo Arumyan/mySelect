@@ -27,4 +27,3 @@
 ```
 ### Demo
 https://arumyan.github.io/mySelect/
-
